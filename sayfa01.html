@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çizgi Roman Sesi</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔊 Sahne Sesi</h2>
+  <audio id="ses" autoplay controls>
+    <source src="sayfa01.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    window.addEventListener('click', function() {
+      var s = document.getElementById('ses');
+      if (s.paused) { s.play(); }
+    });
+  </script>
+</body>
+</html>
